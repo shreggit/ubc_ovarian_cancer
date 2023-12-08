@@ -1,0 +1,16 @@
+Team Members - Saunak B, Abhaya S, Shreyas S
+
+The notebook contains our final work of the UBC Ovarian Cancer Classification project. 
+
+We split the train data into train and test and stored them in separate folders.
+
+Each of the folder have subfolders which have images corresponding to a class,  
+train_dir = '/content/drive/MyDrive/cs_640/UBC-OCEAN_CS640/final_train_imgs/train' contains subfolders CC, EC, HGSC, LGSC, MC
+test_dir = '/content/drive/MyDrive/cs_640/UBC-OCEAN_CS640/final_train_imgs/test' contains subfolders CC, EC, HGSC, LGSC, MC
+
+We then performed preprocessing on the images using Pytorch's trasnforms method, resizing and normalizing the images.
+
+We conducted various experiments by trying out different pretrained architectures with tuning the hyperparameters for each of them.
+
+Our best model was the EfficientNet_B3 architecture which gave an accuracy of 53% on the validation set.
+
